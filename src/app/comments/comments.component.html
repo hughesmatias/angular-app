@@ -1,0 +1,4 @@
+<h4 *ngIf="!edit">Por {{username}}</h4>
+<p>Dice: {{comment}}</p>
+<input [(ngModel)]="comment" *ngIf="edit" />
+<button (click)="onChangeData()">Editar</button>
